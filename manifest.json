@@ -12,7 +12,15 @@
 		],
 		"run_at": "document_idle",
 		"js": ["dark.js"]
-	} ],
+	},{
+		"matches": [
+			"https://moodle.iitd.ac.in/login/index.php"
+		],
+		"run_at": "document_idle",
+		"js": ["login.js"]
+
+
+	}],
 	"icons": {
 		"36": "icons/icon36.png",
 		"48": "icons/icon48.png",
