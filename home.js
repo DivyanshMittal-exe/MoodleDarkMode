@@ -71,7 +71,7 @@ for(var i = 0; i<y.length;i++){
 
 var pglinks = document.getElementsByClassName("page-link");
 for(var i = 0; i<pglinks.length;i++){
-    pglinks[i].style.backgroundColor="#238636";
+    pglinks[i].style.backgroundColor="#161b22";
     pglinks[i].style.color="#f0f6fc";
     pglinks[i].style.border="none";
 }
@@ -82,20 +82,22 @@ document.getElementById("action-menu-0-menubar").style.backgroundColor="#090c10"
 // top navigation butttons
 var buttstop = document.getElementsByClassName("btn btn-default");
 for(var i = 0; i<buttstop.length;i++){
-    buttstop[i].style.backgroundImage="url('https://i.imgur.com/esqBbr2.jpeg')";
-    buttstop[i].style.color="#f0f6fc";
+    buttstop[i].style.backgroundImage="url('https://i.imgur.com/2P1gXit.jpeg')";
+    buttstop[i].style.color="#c9d1d9";
     buttstop[i].style.border="none";
 }
 document.getElementsByClassName("btn btn-default active")[0].style.border="2px solid #30363d";
-document.getElementsByClassName("btn btn-default active")[0].style.backgroundColor="#238636";
-document.getElementsByClassName("btn btn-default active")[0].style.color="#f0f6fc";
-
+document.getElementsByClassName("btn btn-default active")[0].style.backgroundColor="#161b22";
+document.getElementsByClassName("btn btn-default active")[0].style.color="#c9d1d9";
+document.getElementsByClassName("btn btn-default active")[0].style.textShadow="none";
 
 //also top nav
-document.getElementsByClassName("nav-link")[2].style.backgroundColor="#238636";
-document.getElementsByClassName("nav-link")[3].style.backgroundColor="#238636";
-document.getElementsByClassName("nav-link")[2].style.color="#f0f6fc";
-document.getElementsByClassName("nav-link")[3].style.color="#f0f6fc";
+document.getElementsByClassName("nav-link")[2].style.backgroundColor="#161b22";
+document.getElementsByClassName("nav-link")[3].style.backgroundColor="#161b22";
+document.getElementsByClassName("nav-link")[2].style.color="#c9d1d9";
+document.getElementsByClassName("nav-link")[3].style.color="#c9d1d9";
+document.getElementsByClassName("nav-link")[2].style.textShadow="none";
+document.getElementsByClassName("nav-link")[3].style.textShadow="none";
 
 imgs = document.getElementsByClassName("block_online_users  block")[0].getElementsByTagName("img");
 

@@ -4,6 +4,14 @@
 	"description": "Moodle Dark",
 	"content_scripts": [ {
 		"matches": [
+			"https://moodle.iitd.ac.in/*"
+		],
+		"run_at": "document_idle",
+		"js": ["general.js"]
+
+
+	},{
+		"matches": [
 			"https://moodle.iitd.ac.in/grade/*"
 			
 		],
@@ -52,14 +60,6 @@
 	},{
 		"matches": [
 			"https://moodle.iitd.ac.in/user/*"
-		],
-		"run_at": "document_idle",
-		"js": ["user.js"]
-
-
-	},{
-		"matches": [
-			"https://moodle.iitd.ac.in/*"
 		],
 		"run_at": "document_idle",
 		"js": ["user.js"]

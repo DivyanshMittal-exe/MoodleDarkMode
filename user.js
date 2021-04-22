@@ -61,14 +61,20 @@ for(var i=0;i<table.length;i++){
     table[i].style.backgroundColor="#0d1117";
 
  }
-
- document.querySelectorAll("[type='text']").style.backgroundColor="0d1117";
-
- letteri = document.getElementsByClassName("initialbargroups")[0].getElementsByTagName("a");
- for(var i=0;i<letteri.length;i++){
-    letteri[i].style.backgroundColor="#0d1117";
-
- }
+ try {
+    document.querySelectorAll("[type='text']").style.backgroundColor="0d1117";
+}
+  catch(err) {
+  }
+  try {
+    letteri = document.getElementsByClassName("initialbargroups")[0].getElementsByTagName("a");
+    for(var i=0;i<letteri.length;i++){
+       letteri[i].style.backgroundColor="#0d1117";
+   
+    }}
+  catch(err) {
+  }
+ 
  
  try {
     document.getElementById("fgroup_id_buttonar").style.backgroundColor="#090c10";
