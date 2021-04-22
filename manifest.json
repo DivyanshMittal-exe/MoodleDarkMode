@@ -4,20 +4,65 @@
 	"description": "Moodle Dark",
 	"content_scripts": [ {
 		"matches": [
-			"https://moodle.iitd.ac.in/my/*", 
-			"https://moodle.iitd.ac.in/course/*",
-			"https://moodle.iitd.ac.in/mod/*",
-			"https://moodle.iitd.ac.in/grade/*",
-			"https://moodle.iitd.ac.in/user/*"
+			"https://moodle.iitd.ac.in/grade/*"
+			
 		],
 		"run_at": "document_idle",
-		"js": ["dark.js"]
+		"js": ["grade.js"]
 	},{
 		"matches": [
 			"https://moodle.iitd.ac.in/login/index.php"
 		],
 		"run_at": "document_idle",
 		"js": ["login.js"]
+
+
+	},{
+		"matches": [
+			"https://moodle.iitd.ac.in/my/"
+		],
+		"run_at": "document_idle",
+		"js": ["home.js"]
+
+
+	},{
+		"matches": [
+			"https://moodle.iitd.ac.in/course/*"
+		],
+		"run_at": "document_idle",
+		"js": ["course.js"]
+
+
+	},{
+		"matches": [
+			"https://moodle.iitd.ac.in/mod/*"
+		],
+		"run_at": "document_idle",
+		"js": ["mod.js"]
+
+
+	},{
+		"matches": [
+			"https://moodle.iitd.ac.in/user/view/*"
+		],
+		"run_at": "document_idle",
+		"js": ["user_view.js"]
+
+
+	},{
+		"matches": [
+			"https://moodle.iitd.ac.in/user/*"
+		],
+		"run_at": "document_idle",
+		"js": ["user.js"]
+
+
+	},{
+		"matches": [
+			"https://moodle.iitd.ac.in/*"
+		],
+		"run_at": "document_idle",
+		"js": ["user.js"]
 
 
 	}],

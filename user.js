@@ -1,4 +1,4 @@
-console.log("login");
+console.log("general");
 var i=0;
 
 function getElementByXpath(path) {
@@ -40,21 +40,38 @@ for(var i =0 ;i<mainlinksShadow.length;i++){
   mainlinksShadow[i].style.textShadow="none";
 }
 
-//login-button
-document.getElementById("loginbtn").style.backgroundImage= "url('https://i.imgur.com/esqBbr2.jpeg')";
-document.getElementById("loginbtn").style.color = "#c9d1d9";
-document.getElementById("loginbtn").style.textShadow = "none";
-document.getElementById("loginbtn").style.border="none"
+//main panel
+var panels = document.querySelectorAll("[role='navigation']");
+for(var i = 0; i<panels.length;i++){
+    panels[i].style.backgroundColor="#0d1117";
+}
+//side panel
+var panelsSde = document.querySelectorAll("[role='complementary']");
+for(var i = 0; i<panelsSde.length;i++){
+    panelsSde[i].style.backgroundColor="#0d1117";
+}
 
-//forms
-document.getElementById("username").style.backgroundColor="#21262d";
-document.getElementById("username").style.color="#c9d1d9";
-document.getElementById("valuepkg3").style.backgroundColor="#21262d";
-document.getElementById("valuepkg3").style.color="#c9d1d9";
+//name dropdown
+document.getElementById("action-menu-0-menu").style.backgroundColor="#21262c";
+document.getElementById("action-menu-0-menubar").style.backgroundColor="#090c10";
 
-//guest button
-var guestbut = document.getElementsByClassName("guestform")[0];
-guestbut.getElementsByTagName("input")[2].style.backgroundImage="url('https://i.imgur.com/esqBbr2.jpeg')";
-guestbut.getElementsByTagName("input")[2].style.color="#c9d1d9";
-guestbut.getElementsByTagName("input")[2].style.textShadow = "none";
-guestbut.getElementsByTagName("input")[2].style.border="none"
+//table
+var table = document.getElementsByTagName("td");
+for(var i=0;i<table.length;i++){
+    table[i].style.backgroundColor="#0d1117";
+
+ }
+
+ document.querySelectorAll("[type='text']").style.backgroundColor="0d1117";
+
+ letteri = document.getElementsByClassName("initialbargroups")[0].getElementsByTagName("a");
+ for(var i=0;i<letteri.length;i++){
+    letteri[i].style.backgroundColor="#0d1117";
+
+ }
+ 
+ try {
+    document.getElementById("fgroup_id_buttonar").style.backgroundColor="#090c10";
+  }
+  catch(err) {
+  }

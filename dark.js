@@ -56,7 +56,7 @@ var inps = document.getElementsByClassName("breadcrumb-button")[0].getElementsBy
 
         for (var j = 0;j < inps.length; j++) {
             //inps[j].style.color="#f0f6fc";
-            inps[j].style.backgroundColor="#238636";
+            inps[j].style.backgroundImage="url('https://miro.medium.com/max/875/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg')";
            
         }
 
