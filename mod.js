@@ -94,9 +94,17 @@ document.getElementById("jump-to-activity").style.backgroundColor="#21262c";
 
 //quizzes
 if(document.getElementsByClassName("info")[0]){
-    var infoquiz = document.getElementsByTagName("info")
+    var infoquiz = document.getElementsByClassName("info")
       for(var i = 0; i<infoquiz.length;i++){
         infoquiz[i].style.backgroundColor="#0d1117";
         infoquiz[i].style.color="#c9d1d9";
+  }
+  }
+
+  if(document.querySelectorAll("[role='region']")[0]){
+    var rolereg = document.querySelectorAll("[role='region']");
+      for(var i = 0; i<rolereg.length;i++){
+        rolereg[i].style.backgroundColor="#0d1117";
+        rolereg[i].style.color="#c9d1d9";
   }
   }

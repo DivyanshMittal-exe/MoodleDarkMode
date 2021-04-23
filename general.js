@@ -93,5 +93,13 @@ if(document.getElementsByTagName("td")[0]){
 }
 }
 
-
+if(document.querySelectorAll("[role='region']")[0]){
+  var rolereg = document.querySelectorAll("[role='region']");
+    for(var i = 0; i<rolereg.length;i++){
+      rolereg[i].style.backgroundColor="#0d1117";
+      rolereg[i].style.color="#c9d1d9";
+      rolereg[i].getElementsByTagName("img")[0].style.borderRadius="50%";
+      
+}
+}
 
