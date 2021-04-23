@@ -54,3 +54,44 @@ for(var i = 0; i<panelsSde.length;i++){
 //name dropdown
 document.getElementById("action-menu-0-menu").style.backgroundColor="#21262c";
 document.getElementById("action-menu-0-menubar").style.backgroundColor="#090c10";
+
+//textboxes
+
+if(document.getElementsByTagName("input")[0]){
+  var inpis = document.getElementsByTagName("input")
+    for(var i = 0; i<inpis.length;i++){
+      inpis[i].style.backgroundColor="#0d1117";
+      inpis[i].style.color="#c9d1d9";
+}
+}
+
+if(document.querySelectorAll("[type='submit']")[0]){
+  var buttons = document.querySelectorAll("[type='submit']");
+    for(var i = 0; i<buttons.length;i++){
+      
+      buttons[i].style.color="#c9d1d9";
+      buttons[i].style.border="none";
+      buttons[i].style.textShadow="none";
+      buttons[i].style.backgroundImage="url('https://i.imgur.com/esqBbr2.jpeg')";
+
+}
+}
+
+if(document.getElementsByTagName("select")[0]){
+  var selectinps = document.getElementsByTagName("select")
+    for(var i = 0; i<selectinps.length;i++){
+      selectinps[i].style.backgroundColor="#0d1117";
+      selectinps[i].style.color="#c9d1d9";
+}
+}
+
+if(document.getElementsByTagName("td")[0]){
+  var tblegen = document.getElementsByTagName("td")
+    for(var i = 0; i<tblegen.length;i++){
+      tblegen[i].style.backgroundColor="#0d1117";
+      tblegen[i].style.color="#c9d1d9";
+}
+}
+
+
+

@@ -61,23 +61,17 @@ for(var i=0;i<table.length;i++){
     table[i].style.backgroundColor="#0d1117";
 
  }
- try {
-    document.querySelectorAll("[type='text']").style.backgroundColor="0d1117";
-}
-  catch(err) {
-  }
-  try {
-    letteri = document.getElementsByClassName("initialbargroups")[0].getElementsByTagName("a");
-    for(var i=0;i<letteri.length;i++){
-       letteri[i].style.backgroundColor="#0d1117";
-   
-    }}
-  catch(err) {
-  }
+
+ if(document.getElementById("participants").getElementsByTagName("img")[0]){
+ imgs = document.getElementById("participants").getElementsByTagName("img");
+
+ for(var i = 0; i<imgs.length;i++){
+     
+     imgs[i].style.borderRadius="50%";
+ }
  
+ }
+
+
  
- try {
-    document.getElementById("fgroup_id_buttonar").style.backgroundColor="#090c10";
-  }
-  catch(err) {
-  }
+  

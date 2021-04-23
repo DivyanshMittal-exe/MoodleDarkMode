@@ -1,6 +1,6 @@
 {
 	"name": "Moodle Dark Mode",
-	"version": "1.1",
+	"version": "1.2",
 	"description": "Moodle Dark",
 	"content_scripts": [ {
 		"matches": [
@@ -27,7 +27,7 @@
 
 	},{
 		"matches": [
-			"https://moodle.iitd.ac.in/my/"
+			"https://moodle.iitd.ac.in/my/*"
 		],
 		"run_at": "document_idle",
 		"js": ["home.js"]

@@ -107,3 +107,9 @@ for(var i = 0; i<imgs.length;i++){
 }
 
 // document.getElementsByClassName("btn btn-secondary").style.backgroundImage="url('https://i.imgur.com/esqBbr2.jpeg')";
+
+//admin - block
+
+if(document.getElementsByClassName("adminblock")[0]){
+    document.getElementsByClassName("adminblock")[0].style.backgroundColor="#0d1117"
+}

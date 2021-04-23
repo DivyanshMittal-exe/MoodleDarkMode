@@ -90,3 +90,13 @@ for(var j=0;j<tablelinks.length;j++){
 // dropdowns
     jump-to-activity
 document.getElementById("jump-to-activity").style.backgroundColor="#21262c";
+
+
+//quizzes
+if(document.getElementsByClassName("info")[0]){
+    var infoquiz = document.getElementsByTagName("info")
+      for(var i = 0; i<infoquiz.length;i++){
+        infoquiz[i].style.backgroundColor="#0d1117";
+        infoquiz[i].style.color="#c9d1d9";
+  }
+  }
