@@ -51,19 +51,25 @@ for(var i = 0; i<panelsSde.length;i++){
     panelsSde[i].style.backgroundColor="#0d1117";
 }
 
+
+
 //name dropdown
 document.getElementById("action-menu-0-menu").style.backgroundColor="#21262c";
 document.getElementById("action-menu-0-menubar").style.backgroundColor="#090c10";
 
+if(document.getElementById("searchforums")){
 //top buttons
 document.getElementById("searchforums").style.backgroundImage="url('https://i.imgur.com/esqBbr2.jpeg')";
 document.getElementById("searchforums").style.color=" #c9d1d9";
 document.getElementById("searchforums").style.border="none";
 document.getElementById("searchforums").style.textShadow ="none";
 
+}
+if(document.getElementById("search")){
 document.getElementById("search").style.backgroundColor="#21262c";
+}
 
-
+if(document.getElementsByTagName("td")[0]){
 //table
 var table = document.getElementsByClassName("discussion r0");
 for(var i=0;i<table.length;i++){
@@ -75,20 +81,29 @@ for(var i=0;i<table.length;i++){
 }
 
 var tableo = document.getElementsByClassName("discussion r1");
-for(var i=0;i<table.length;i++){
+for(var i=0;i<tableo.length;i++){
     var tabso= tableo[i].getElementsByTagName("td");
     for(var j=0;j<tabs.length;j++){
     tabso[j].style.backgroundColor="#0d1117";
     }
 }
 
+var tableheader = document.getElementsByTagName("th");
+for(var i=0;i<tableheader.length;i++){
+  tableheader[i].style.backgroundColor="#0d1117";
+}
+
+
+if(document.getElementsByClassName("forumheaderlist")[0]){
 var tablelinks = document.getElementsByClassName("forumheaderlist")[0].getElementsByTagName("a");
 for(var j=0;j<tablelinks.length;j++){
     tablelinks[j].style.color="#c9d1d9";
     }
+  }
+
+  }
 
 // dropdowns
-    jump-to-activity
 document.getElementById("jump-to-activity").style.backgroundColor="#21262c";
 
 
@@ -106,5 +121,15 @@ if(document.getElementsByClassName("info")[0]){
       for(var i = 0; i<rolereg.length;i++){
         rolereg[i].style.backgroundColor="#0d1117";
         rolereg[i].style.color="#c9d1d9";
+  }
+  }
+
+
+// quiz
+  if(document.getElementsByClassName("info")[0]){
+    var qtiles = document.getElementsByClassName("info");
+      for(var i = 0; i<qtiles.length;i++){
+        qtiles[i].style.backgroundColor="#0d1117";
+        qtiles[i].style.color="#c9d1d9";
   }
   }

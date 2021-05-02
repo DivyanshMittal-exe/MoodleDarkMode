@@ -103,3 +103,6 @@ if(document.querySelectorAll("[role='region']")[0]){
 }
 }
 
+if(document.getElementById("fgroup_id_buttonar")){
+  document.getElementById("fgroup_id_buttonar").style.backgroundColor="#090c10";
+}

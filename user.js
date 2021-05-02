@@ -62,15 +62,18 @@ for(var i=0;i<table.length;i++){
 
  }
 
- if(document.getElementById("participants").getElementsByTagName("img")[0]){
+ if(document.getElementById("participants")){
  imgs = document.getElementById("participants").getElementsByTagName("img");
 
  for(var i = 0; i<imgs.length;i++){
      
      imgs[i].style.borderRadius="50%";
  }
- 
- }
+}
+
+if(document.getElementById("fgroup_id_buttonar")){
+    document.getElementById("fgroup_id_buttonar").style.backgroundColor="#090c10 ";
+}
 
 
  
