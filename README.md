@@ -1,6 +1,7 @@
 # Moodle Dark Mode
 
 Simple plugin for Moodle dark mode 
+![image](https://user-images.githubusercontent.com/78041366/122680395-8b185400-d20c-11eb-9a95-fe393518fd26.png)
 
 
 ### Contributing
